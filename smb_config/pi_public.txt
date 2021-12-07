@@ -1,0 +1,8 @@
+[pi_public]
+Path = /home/pi/public
+Comment = Pi shared folder
+Browseable = yes
+Writeable = yes
+create mask = 0666
+directory mask = 0777
+Guest ok = yes
