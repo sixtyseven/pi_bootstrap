@@ -9,13 +9,11 @@
 
 git clone https://github.com/sixtyseven/pi_bootstrap.git
 
-
 #### run bootstrap.sh
 
 1. `sudo su` as root user
 2. run: `./bootstrap/ubuntu_bootstrap.sh` file
 3. [optional] run: `./bootstrap/optional.sh` file
 4. reboot
-
 
 ### [Optional] install Argon config if using Argon [others.sh]

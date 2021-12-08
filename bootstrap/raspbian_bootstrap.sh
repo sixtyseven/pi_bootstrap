@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -f "./smb_config/ubuntu_work.txt" ]; then
+    echo "Please run this script in the project root dir."
+    exit
+fi
+
 echo "[install] bootstrap for new OS [start]"
 
 apt update && apt upgrade -y
@@ -35,9 +40,6 @@ apt install -y samba samba-common-bin
 
 echo "[update] smb configuration..."
 cat smb_config/pi_public.txt >> /etc/samba/smb.conf 
-
-echo "[update] git configuration..."
-cat git_config/gitconfig.txt >> /home/pi/.gitconfig
 
 
 echo "[install] bootstrap for new OS [finished]"
