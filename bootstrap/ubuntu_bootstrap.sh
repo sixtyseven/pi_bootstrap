@@ -39,7 +39,8 @@ fi
 apt install -y samba
 
 echo "[update] smb configuration..."
-cat smb_config/ubuntu.txt >> /etc/samba/smb.conf 
+mkdir ~/public
+cat ./smb_config/ubuntu_public.txt >> /etc/samba/smb.conf 
 
 service smbd restart
 
