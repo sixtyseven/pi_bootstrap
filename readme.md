@@ -1,15 +1,21 @@
-## Linux OS bootstrap for a new raspbian systems (Tested on Ubuntu 20.04)
+## Firstly, install ubuntu20.04 server on a microSD card (for Pi4)
 
-### Enable ssh
+## Secondly, clone repo to local
+`
+git clone git@github.com:sixtyseven/pi_work_bootstrap.git
+`
+## Thirdly, login unbuntu, install softwares
+
+### To ssh your pi remotely
+#### Enable ssh
 
 `systemctl enable ssh`
 `systemctl start ssh`
 
-### clone repo to local
+#### scp bootstrap.sh
+`scp -r ../pi_work_bootstrap user@ip:~/pi_work_bootstrap`
 
-git clone https://github.com/sixtyseven/pi_bootstrap.git
-
-#### run bootstrap.sh
+### run bootstrap.sh
 
 1. `sudo su` as root user
 2. run: `./bootstrap/ubuntu_bootstrap.sh` file

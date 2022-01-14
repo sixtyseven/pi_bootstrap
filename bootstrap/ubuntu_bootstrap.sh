@@ -5,7 +5,6 @@ if [ ! -f "./smb_config/ubuntu_work.txt" ]; then
     exit
 fi
 
-# with some limited tests on Ubuntu server 20.04 
 echo "[install] bootstrap for new OS [start]"
 apt update && apt upgrade -y
 
