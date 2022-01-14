@@ -8,11 +8,6 @@ fi
 echo "[install] bootstrap for new OS [start]"
 apt update && apt upgrade -y
 
-# apt install -y openssh-server
-
-# Update the firewall rules to allow ssh traffic
-ufw allow ssh
-
 # install docker 
 if [ -x "$(command -v docker)" ]; then
     echo "[installed] docker has been installed"
