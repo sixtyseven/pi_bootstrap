@@ -1,1 +1,9 @@
-//todo
+[pi4_work_todo]
+Path = /home/ubuntu/work
+Comment = Pi work folder
+Guest ok = no
+
+Browseable = yes
+Writeable = yes
+create mask = 0666
+directory mask = 0777

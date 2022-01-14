@@ -1,7 +1,6 @@
 [pi4_public]
 Path = /home/ubuntu/public
 Comment = Pi shared folder
-Path = /home/ubuntu/public
 Browseable = yes
 Writeable = yes
 create mask = 0666
